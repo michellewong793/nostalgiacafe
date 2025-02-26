@@ -92,6 +92,7 @@ export default function Home() {
                   'we are looking for artists who love to teach and learn from other artists. we encourage members to teach a workshop at our studio at least once!'
                 }
                 buttonText={'apply to be a member'}
+                buttonLink={"https://docs.google.com/forms/d/1LVO-0J97Z857qIDq61b_NgfvmfxuLaii9OVKz5GQdjU/preview"}
               />
 
              
