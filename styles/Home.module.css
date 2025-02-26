@@ -1,0 +1,415 @@
+.container {
+  background-image: url("/background_mobile.svg");
+  background-size: cover;
+  height: fit-content;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 100%;
+    background-image: url("/desktop_bg.svg");
+    background-size: cover;
+  }
+}
+
+.desktopLogo {
+  height: 3rem;
+}
+
+.waveImage {
+  width: 100%;
+}
+
+.proposalContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: "Lexend";
+}
+
+.proposalContainer p {
+  color: indigo;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .proposalContainer p {
+    width: 30rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .proposalContainer p {
+    width: 50rem;
+    font-size: 1.5rem;
+  }
+}
+
+.proposalButton {
+  background-color: #daf58c;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .proposalButton {
+    font-size: 1rem;
+    width: 40%;
+  }
+}
+
+.proposalButton:hover {
+  background-color: #bdff00;
+  border-radius: 50px;
+  border: none;
+  animation: bounce;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+}
+
+.proposalText {
+  color: #3a1d8b;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .proposalText {
+    font-size: 2.5rem;
+  }
+}
+
+.mobileHamburger {
+  width: 2rem;
+  height: 2rem;
+}
+
+.mobileLogo {
+  height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .mobileLogo {
+    display: none;
+  }
+}
+
+.mobileNavBarIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.mobileNavBarLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.mobileNavBarLinkContainer {
+  margin-top: 3rem;
+  height: 10rem;
+  width: 100%;
+  background-color: #daf58c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.mobileNavBarLink {
+  font-size: 0.75rem;
+  line-height: 2rem;
+  align-self: center;
+}
+
+.mobileNavBarLink:active {
+  text-decoration: underline;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+.navLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+.navLink {
+  color: #fd39ff;
+  letter-spacing: -1px;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  animation: bounce;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  color: #6900e9;
+}
+
+.link {
+  color: #3a1d8b;
+  font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+  .link {
+    font-size: 1.5rem;
+  }
+}
+
+.activeQuestText {
+  color: #fd39ff;
+  font-size: 0.75rem;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 500px) {
+  .activeQuestText {
+    font-size: 1rem;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: jump-start;
+}
+
+.activeQuestTextBox {
+  color: #bbfc00;
+  font-size: 0.5rem;
+  padding: 1rem;
+  background-color: #3a1d8b;
+  width: fit-content;
+  border-color: #bbfc00;
+  border: 1px dotted;
+  border-radius: 9px;
+  align-self: center;
+  line-height: 1rem;
+  animation: example 2s, pulse 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 500px) {
+  .activeQuestTextBox {
+    font-size: 1rem;
+    margin-top: 10rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobileHamburger {
+    display: none;
+  }
+}
+
+.smallFlexColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+
+.arrowSvg {
+  height: 20px;
+  animation: pulse 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@media (min-width: 500px) {
+  .arrowSvg {
+    height: 30px;
+  }
+}
+
+.navBar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 1rem;
+    color: #f083f9;
+  }
+}
+
+.title {
+  color: #6900e9;
+  font-size: "4rem";
+}
+
+.landingContainer {
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .landingContainer {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 400px) {
+  .landingContainer {
+    padding: 3.5rem;
+  }
+}
+
+.header {
+  font-family: "Lexend";
+  color: #3a1d8b;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.header2 {
+  font-family: "Lexend";
+  color: #3a1d8b;
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    text-align: left;
+    position: relative;
+    max-width: 45rem;
+  }
+
+  .header2 {
+    font-size: 3.5rem;
+    text-align: left;
+    position: relative;
+    max-width: 45rem;
+  }
+}
+
+.subheader {
+  color: indigo;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+  margin-top: 0rem;
+}
+
+@media (min-width: 768px) {
+  .subheader {
+    color: indigo;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+    margin-top: 0rem;
+  }
+}
+
+.questBlock {
+  height: fit-content;
+}
+
+.questContainer {
+  margin-top: 10rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.activeQuestsHeader {
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #3a1d8b;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 9px;
+  margin: auto;
+  animation: pulse;
+  animation-timing-function: infinite;
+  animation-duration: 2s;
+}
+
+@media (min-width: 400px) {
+  .activeQuestsHeader {
+    font-size: 40px;
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 1000px) {
+  .questContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}

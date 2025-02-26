@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url('Lexend-Regular.ttf');
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('Lexend-Bold.ttf');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('PressStart2P-Regular.ttf');
+    font-weight: 400;
+    font-style: regular;
+}
