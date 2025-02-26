@@ -20,8 +20,11 @@ export default function Nav() {
 
       {mobileNavActive ? (
         <div className={styles.mobileNavBarLinkContainer}>
+           <Link href="/" className={styles.mobileNavBarLink}>
+            home
+          </Link>
           <Link href="/about" className={styles.mobileNavBarLink}>
-            About
+            about
           </Link>
         </div>
       ) : (
